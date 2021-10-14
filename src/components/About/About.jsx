@@ -4,6 +4,7 @@ import { Container, Row, Col } from 'react-bootstrap';
 import Title from '../Title/Title';
 import AboutImg from '../Image/AboutImg';
 import PortfolioContext from '../../context/context';
+import { Link } from 'react-scroll';
 
 const About = () => {
   const { about } = useContext(PortfolioContext);
@@ -38,28 +39,27 @@ const About = () => {
             <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={1000} distance="30px">
               <div className="about-wrapper__info">
                 <p className="about-wrapper__info-text">
-                  {paragraphOne ||
-                    'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi neque, ipsa animi maiores repellendu distinctioaperiam earum dolor voluptatum consequatur blanditiis inventore debitis fuga numquam voluptate architecto itaque molestiae.'}
+                  {paragraphOne}
                 </p>
                 <p className="about-wrapper__info-text">
-                  {paragraphTwo ||
-                    'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi neque, ipsa animi maiores repellendu distinctioaperiam earum dolor voluptatum consequatur blanditiis inventore debitis fuga numquam voluptate architecto itaque molestiae.'}
+                  {paragraphTwo}
                 </p>
                 <p className="about-wrapper__info-text">
-                  {paragraphThree || 'Lorem ipsum dolor sit, amet consectetur adipisicing elit.'}
+                  {paragraphThree}
                 </p>
-                {/* {resume && (
+                {resume && (
                   <span className="d-flex mt-3">
-                    <a
-                      target="_blank"
+                    <a href="#"><Link to="projects" smooth duration={1000} className="cta-btn cta-btn--resume">View Projects</Link></a>
+                    {/* <a
+                      //target="_blank"
                       rel="noopener noreferrer"
                       className="cta-btn cta-btn--resume"
-                      href={resume}
+                      href= 'projects'
                     >
-                      Resume
-                    </a>
+                      View Projects
+                    </a> */}
                   </span>
-                )} */}
+                )}
               </div>
             </Fade>
           </Col>

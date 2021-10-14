@@ -22,7 +22,7 @@ export const aboutData = {
   paragraphOne: 'Currently completing my Bsc Hons degree in Computer Science at The University of Strathclyde. I also work as a part time Product Developer at Simul8 where i focus on bug fixes and improvements.',
   paragraphTwo: ' ',
   paragraphThree: ' ',
-  resume: ' ', // if no resume, the button will not show up
+  resume: 'test', // if no resume, the button will not show up
 };
 
 // PROJECTS DATA
